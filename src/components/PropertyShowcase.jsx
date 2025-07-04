@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
 import {
-  MapPin,
-  Bed,
-  Bath,
-  Car,
-  Calendar,
-  Home,
-  Eye,
-  Heart,
-  Share2,
-  Phone,
-  Mail,
-  Star,
-  ChevronLeft,
-  ChevronRight,
-  Play,
-  Maximize2,
-  Bookmark,
-  ArrowLeft,
-  ArrowRight,
-  DollarSign,
-  Ruler,
-  BedDouble,
-  Building,
+    MapPin,
+    Bed,
+    Bath,
+    Car,
+    Calendar,
+    Home,
+    Eye,
+    Heart,
+    Share2,
+    Phone,
+    Mail,
+    Star,
+    ChevronLeft,
+    ChevronRight,
+    Play,
+    Maximize2,
+    Bookmark,
+    ArrowLeft,
+    ArrowRight,
+    DollarSign,
+    Ruler,
+    BedDouble,
+    Building,
 } from 'lucide-react';
 
 export default function PropertyShowcase() {
@@ -104,14 +104,14 @@ export default function PropertyShowcase() {
     };
 
     const propertyDetails = [
-      { icon: <Home size={18} />, label: 'Property ID', value: 'HZ29' },
-      { icon: <DollarSign size={18} />, label: 'Price', value: formatPrice(property.price) },
-      { icon: <Ruler size={18} />, label: 'Property Size', value: `${property.area} Sq Ft` },
-      { icon: <BedDouble size={18} />, label: 'Bedrooms', value: property.bedrooms },
-      { icon: <Bath size={18} />, label: 'Bathrooms', value: property.bathrooms },
-      { icon: <Car size={18} />, label: 'Garage', value: '1' },
-      { icon: <Calendar size={18} />, label: 'Year Built', value: property.yearBuilt },
-      { icon: <Building size={18} />, label: 'Property Type', value: property.propertyType },
+        { icon: <Home size={18} />, label: 'Property ID', value: 'HZ29' },
+        { icon: <DollarSign size={18} />, label: 'Price', value: formatPrice(property.price) },
+        { icon: <Ruler size={18} />, label: 'Property Size', value: `${property.area} Sq Ft` },
+        { icon: <BedDouble size={18} />, label: 'Bedrooms', value: property.bedrooms },
+        { icon: <Bath size={18} />, label: 'Bathrooms', value: property.bathrooms },
+        { icon: <Car size={18} />, label: 'Garage', value: '1' },
+        { icon: <Calendar size={18} />, label: 'Year Built', value: property.yearBuilt },
+        { icon: <Building size={18} />, label: 'Property Type', value: property.propertyType },
     ];
 
     // Mobile Header Component
@@ -140,73 +140,73 @@ export default function PropertyShowcase() {
                 <span className="text-sm">{property.addressLine}</span>
             </div>
 
-          
+
         </div>
     );
 
     // Contact Form Component
-   
 
-const ContactForm = () => (
-  <div className="bg-white rounded-xl p-6 shadow-md">
-    {/* Agent Info */}
-    <div className="flex items-center gap-4 mb-6">
-      <img
-        src="https://i.ibb.co/YmfKWZW/hero1.jpg" // replace with your agent image path
-        alt="Samuel Palmer"
-        className="w-12 h-12 rounded-full object-cover"
-      />
-      <div>
-        <div className="font-semibold text-gray-900">Samuel Palmer</div>
-        <div className="text-sm text-blue-600 hover:underline cursor-pointer">
-          View Listings
+
+    const ContactForm = () => (
+        <div className="bg-white rounded-xl p-6 shadow-md">
+            {/* Agent Info */}
+            <div className="flex items-center gap-4 mb-6">
+                <img
+                    src="https://i.ibb.co/YmfKWZW/hero1.jpg" // replace with your agent image path
+                    alt="Samuel Palmer"
+                    className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                    <div className="font-semibold text-gray-900">Samuel Palmer</div>
+                    <div className="text-sm text-blue-600 hover:underline cursor-pointer">
+                        View Listings
+                    </div>
+                </div>
+            </div>
+
+            {/* Contact Form */}
+            <form className="space-y-4">
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                />
+                <input
+                    type="tel"
+                    placeholder="Phone"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                />
+                <input
+                    type="email"
+                    placeholder="Email"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                />
+                <textarea
+                    placeholder="Hello, I am interested in [Design apartment]"
+                    rows="4"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm resize-none focus:outline-none focus:ring-2 focus:ring-gray-900"
+                ></textarea>
+
+                <div className="flex items-start gap-2">
+                    <input
+                        type="checkbox"
+                        id="agree"
+                        className="mt-1 w-4 h-4 text-gray-900 border-gray-300 rounded focus:ring-gray-900"
+                    />
+                    <label htmlFor="agree" className="text-xs text-gray-600">
+                        By submitting this form I agree to the Terms of Use.
+                    </label>
+                </div>
+
+                <button
+                    type="submit"
+                    className="w-full bg-gray-900 text-white py-3 rounded-lg font-medium hover:bg-gray-700 transition"
+                >
+                    Send Message
+                </button>
+            </form>
         </div>
-      </div>
-    </div>
-
-    {/* Contact Form */}
-    <form className="space-y-4">
-      <input
-        type="text"
-        placeholder="Your Name"
-        className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
-      />
-      <input
-        type="tel"
-        placeholder="Phone"
-        className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
-      />
-      <textarea
-        placeholder="Hello, I am interested in [Design apartment]"
-        rows="4"
-        className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm resize-none focus:outline-none focus:ring-2 focus:ring-gray-900"
-      ></textarea>
-
-      <div className="flex items-start gap-2">
-        <input
-          type="checkbox"
-          id="agree"
-          className="mt-1 w-4 h-4 text-gray-900 border-gray-300 rounded focus:ring-gray-900"
-        />
-        <label htmlFor="agree" className="text-xs text-gray-600">
-          By submitting this form I agree to the Terms of Use.
-        </label>
-      </div>
-
-      <button
-        type="submit"
-        className="w-full bg-gray-900 text-white py-3 rounded-lg font-medium hover:bg-gray-700 transition"
-      >
-        Send Message
-      </button>
-    </form>
-  </div>
-);
+    );
 
 
     return (
@@ -331,23 +331,23 @@ const ContactForm = () => (
                             </p>
                         </div>
 
-                     <div className="bg-white rounded-xl p-6 shadow-md">
-  <h2 className="text-xl font-semibold mb-6 text-gray-900">Property Details</h2>
-  <div className="grid grid-cols-2 gap-4">
-    {propertyDetails.map((item, index) => (
-      <div
-        key={index}
-        className="flex items-center gap-4 bg-gray-50 px-4 py-3 rounded-md border border-gray-200 hover:shadow-sm transition"
-      >
-        <div className="text-gray-600">{item.icon}</div>
-        <div className="flex flex-col">
-          <span className="text-xs text-gray-500">{item.label}</span>
-          <span className="text-sm font-medium text-gray-900">{item.value}</span>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                        <div className="bg-white rounded-xl p-6 shadow-md">
+                            <h2 className="text-xl font-semibold mb-6 text-gray-900">Property Details</h2>
+                            <div className="grid grid-cols-2 gap-4">
+                                {propertyDetails.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex items-center gap-4 bg-gray-50 px-4 py-3 rounded-md border border-gray-200 hover:shadow-sm transition"
+                                    >
+                                        <div className="text-gray-600">{item.icon}</div>
+                                        <div className="flex flex-col">
+                                            <span className="text-xs text-gray-500">{item.label}</span>
+                                            <span className="text-sm font-medium text-gray-900">{item.value}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
 
 
 
@@ -428,15 +428,18 @@ const ContactForm = () => (
                                 </div>
                             </div>
 
-                            <div className="h-48 bg-gray-100 rounded-lg flex items-center justify-center">
-                                <div className="text-center">
-                                    <MapPin className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-                                    <p className="text-sm text-gray-600">Map View</p>
-                                    <button className="mt-2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700 transition-colors">
-                                        Open on Google Maps
-                                    </button>
-                                </div>
+                            <div className="h-48 bg-gray-100 rounded-lg overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13037.961079219229!2d73.85479161416407!3d18.51520623562122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1e2226b7b11%3A0xa4bb8106175ca68b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1751645554187!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                             </div>
+
                         </div>
                     </div>
 
@@ -467,7 +470,7 @@ const ContactForm = () => (
                                 <span className="text-sm">{property.addressLine}</span>
                             </div>
 
-                           
+
                         </div>
 
                         {/* Contact Agent */}
@@ -503,14 +506,16 @@ const ContactForm = () => (
                                 </div>
                             </div>
 
-                            <div className="mt-4 h-48 bg-gray-100 rounded-lg flex items-center justify-center">
-                                <div className="text-center">
-                                    <MapPin className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-                                    <p className="text-sm text-gray-600">Map View</p>
-                                    <button className="mt-2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700 transition-colors">
-                                        Open on Google Maps
-                                    </button>
-                                </div>
+                            <div className="h-48 bg-gray-100 rounded-lg overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13037.961079219229!2d73.85479161416407!3d18.51520623562122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1e2226b7b11%3A0xa4bb8106175ca68b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1751645554187!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                             </div>
                         </div>
                     </div>
