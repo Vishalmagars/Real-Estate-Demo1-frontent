@@ -86,11 +86,11 @@ const PropertyCardSlider1 = () => {
   };
 
   const handleCardClick = () => {
-    navigate('/i');
+    navigate('/propertepage');
   };
 
   const handleShowMore = () => {
-    window.location.href = '/properties';
+    window.location.href = '/propertepage';
   };
 
   return (
